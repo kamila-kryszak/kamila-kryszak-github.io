@@ -1,6 +1,17 @@
 .hero {
     padding: 42px 16px 24px;
 
+    @media (min-width: $tablet) {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    &__bubble {
+        position: absolute;
+        left: calc(50% + 100px);
+        top: 12px;
+    }
+
     &__contact {
         border-radius: 64px;
         color: $white;
@@ -9,6 +20,12 @@
         text-decoration: none;
         font-weight: bold;
         display: inline-block;
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 35px;
+        }
     }
 
     &__description {
@@ -20,22 +37,57 @@
         line-height: 32px;
         text-align: center;
         color: $textDark;
+
+        @media (min-width: $desktop) {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
 
     &__hello {
         display: none;
+
+        @media (min-width: $desktop) {
+            display: block;
+            color: $white;
+            padding: 16px 19px;
+            background-color: $blue;
+            border-radius: 16px;
+            border: 3px solid yellow;
+            font-weight: bold;
+            font-size: 20px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 17.42px;
+                height: 22.66px;
+                background: url(../assets/img/speech.svg);
+                position: absolute;
+                top: 100%;
+                left: 27px;
+            }
+
+        }
     }
 
     &__image {
         width: 96px;
         height: 128px;
         border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+
+        @media (min-width: $desktop) {
+            width: 155px;
+            height: 207px;
+        }
     }
 
     &__image-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
     &__link {
@@ -50,6 +102,12 @@
         font-size: 16px;
         line-height: 32px;
         margin-bottom: 22px;
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 27px;
+        }
     }
 
     &__special {
