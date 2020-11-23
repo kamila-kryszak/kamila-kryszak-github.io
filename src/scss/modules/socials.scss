@@ -1,8 +1,12 @@
 .socials {
     list-style-type: none;
-    padding: 56px 64px;
+    margin: 56px 64px;
     display: flex;
     justify-content: center;
+
+    @media (min-width: $desktop) {
+        margin: 0;
+    }
 
     &__item {
         margin: 0 12px;
