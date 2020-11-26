@@ -1,4 +1,3 @@
-![cover] (https://raw.githubusercontent.com/kamila-kryszak/kamila-kryszak.github.io/source/public/og.png)
 
 # KAMILA KRYSZAK - JUNIOR FRONTEND DEVELOPER 
 
