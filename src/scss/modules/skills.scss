@@ -3,7 +3,6 @@
     color: $white;
     padding: 64px 16px 88px;
 
-
     &__columns {
 
         @media (min-width: $desktop) {
@@ -11,7 +10,6 @@
             grid-template-columns: 1fr 1fr 1fr;
             max-width: 1184px;
             margin: 0 auto;
-
         }
     }
 
@@ -39,7 +37,6 @@
     margin: 0 auto;
     list-style: none;
     padding: 0;
-
 
     &__item {
 
@@ -93,7 +90,6 @@
         line-height: 64px;
         display: block;
         text-align: center;
-
     }
 
     &__header {
@@ -102,6 +98,5 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 44px;
-
     }
 }

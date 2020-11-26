@@ -2,18 +2,18 @@
     background-color: $lighterBlue;
     padding: 64px 16px 88px;
 
-
     &__description {
         font-weight: 300;
         font-size: 16px;
         line-height: 32px;
         text-align: center;
         padding-bottom: 56px;
+        max-width: 786px;
+        margin: 0 auto;
 
         @media (min-width: $desktop) {
             font-size: 20px;
             line-height: 40px;
-
         }
     }
 
@@ -27,7 +27,6 @@
         display: inline-block;
         font-size: 20px;
         line-height: 40px;
-
     }
 
     &__header {
@@ -47,7 +46,6 @@
 
     &__links {
         text-align: center;
-
 
         @media (min-width: $desktop) {
             display: flex;
